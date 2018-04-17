@@ -1,0 +1,3 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/samus-aran/samus-aran.github.io.git
