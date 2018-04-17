@@ -1,0 +1,33 @@
+BaseUrl= "http://example.com/"
+LanguageCode= "en-EN"
+Title= "Welcome to nowhere"
+paginate = 5
+Copyright = "All rights reserved - 2018"
+canonifyurls = true
+theme = "casper-custom"
+[params]
+  description = "A place for ramblings, thoughts and gists."
+  cover = "/images/cover-resize.jpg"
+  author = "Samus Aran"
+  authorlocation = "Glasgow, Scotland"
+  githubName = "samus-aran"
+  twitterName = "miniridley"
+  hideHUGOSupport = false
+  hjsStyle = "default"
+
+  [params.social]
+
+ [[menu.main]]
+   name = "My Blog"
+   weight = -120
+   identifier = "blog"
+   url = "/"
+
+ [[menu.main]]
+   name = "About"
+   weight = -110
+   identifier = "about"
+   url = "/about"
+
+   [permalinks]
+   post = "/:slug/"

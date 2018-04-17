@@ -1,0 +1,37 @@
+<article class="post {{ .Section }}">
+    <header class="post-header">
+        <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    </header>
+    <section class="post-excerpt">
+        {{if .Params.excerpt }}
+            <p>{{ .Params.excerpt }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
+        {{else}}
+            <p>{{ .Summary }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
+        {{end}}
+    </section>
+    <footer class="post-meta">
+        
+
+        {{ if or .Params.author .Site.Params.author}}
+            {{$authorname := or .Params.author .Site.Params.author }}
+            {{$authoravatar := or .Params.authoravatar .Site.Params.logo }}
+
+            {{with $authoravatar}}
+            <img class="author-thumb" src="{{ $authoravatar| relURL  }}" alt="Author image" nopin="nopin" />
+            {{end}}
+            
+            {{with $authorname}}
+            {{$authorname}}
+            {{end}}     
+        {{end}}
+
+        {{if .Params.tags }}on
+            {{ range $index, $tag := .Params.tags }}
+                <a href="{{$.Site.BaseURL}}/tags/{{ $tag | urlize }}/">#{{ $tag }}</a>,
+            {{ end }}
+        {{end}}
+        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+            {{ .Date.Format "2 Jan 2006" }}
+        </time>
+    </footer>
+</article>
