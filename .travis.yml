@@ -4,7 +4,7 @@ go:
   - master # This uses automatically the latest version of go
 
 install:
-  - go get github.com/spf13/hugo
+  - go get github.com/gohugoio/hugo
 
 script:
   - hugo --theme=casper-custom # This commands builds your website on travis
