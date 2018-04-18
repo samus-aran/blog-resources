@@ -1,3 +1,9 @@
+[submodule "casper"]
+	path = themes/casper
+	url = https://github.com/vjeantet/hugo-theme-casper.git
+
 [submodule "public"]
 	path = public
 	url = https://github.com/samus-aran/samus-aran.github.io.git
+
+
