@@ -1,0 +1,22 @@
+language: go
+
+go:
+  - master # This uses automatically the latest version of go
+
+install:
+  - go get github.com/spf13/hugo
+
+script:
+  - hugo --theme=casper-custom # This commands builds your website on travis
+
+deploy:
+  local_dir: public # Default static site output dir for Hugo
+  repo: samus-aran/samus-aran.github.io # This is the slug of the repo you want to deploy your site to
+  target_branch: master # GitHub pages branch to deploy to (in other cases it can be gh-pages)
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # This is the authentication which you will setup in the next step in travis-ci dashboard
+  email: ashjayne.nicolson@gmail.com
+  name: "samus-aran"
+  on:
+    branch: master
