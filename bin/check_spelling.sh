@@ -1,7 +1,7 @@
 #!/bin/bash
 # requires apt packages: aspell, aspell-en
 
-[[ "$TRAVIS_PULL_REQUEST" == "false" ]] && exit 0 # bypass script if not a pull request
+[[ "$TRAVIS_PULL_REQUEST" != "false" ]] && exit 0 # continue the script if not a pull request (what other request are there?)
 
 RED='\033[0;31m'
 GREEN='\033[0;32m'
