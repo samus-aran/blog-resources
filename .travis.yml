@@ -8,6 +8,9 @@ addons:
 go:
   - master # This uses automatically the latest version of go
 
+before_install:
+  - chmod +x ./bin/check_spelling.sh
+
 install:
   # - go get github.com/gohugoio/hugo
   - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.39/hugo_0.39_Linux-64bit.deb # how can we get to update automatically?
@@ -15,7 +18,7 @@ install:
 
 script:
   - hugo --theme=casper-custom # This commands builds your website on travis
-  - sh /bin/check_spelling.sh
+  - ./bin/check_spelling.sh
 
 deploy:
   local_dir: public # Default static site output dir for Hugo
