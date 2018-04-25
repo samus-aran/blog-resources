@@ -1,5 +1,10 @@
 language: go
 sudo: required
+addons:
+  apt:
+    packages:
+      - aspell
+      - aspell-en
 go:
   - master # This uses automatically the latest version of go
 
@@ -10,6 +15,7 @@ install:
 
 script:
   - hugo --theme=casper-custom # This commands builds your website on travis
+  - ./bin/check_spelling.sh
 
 deploy:
   local_dir: public # Default static site output dir for Hugo
