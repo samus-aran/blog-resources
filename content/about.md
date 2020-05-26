@@ -11,6 +11,7 @@ image = "images/cover-resize.jpg"
 
 Why hello! I'm Ashley and I enjoy co-organising Scotland Open Source Users Meetups [(SOSUM)](http://scot-osum.gitlab.io/).
 
+Testing this!
 
 ![](/images/avatar.jpg)
 
