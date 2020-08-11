@@ -6,7 +6,7 @@ title                   = "Welcome to nowhere"
 theme                   = "hugo-future-imperfect-slim-custom"
 paginate                = 5
 disqusShortname         = ""
-googleAnalytics         = ""
+googleAnalytics         = "UA-175174113-1"
 pluralizeListTitles     = false
 disableLanguages        = []
 
@@ -70,7 +70,7 @@ disableLanguages        = []
     socialFooter        = true
 
   [params.staticman]
-    enabled             = true
+    enabled             = false
     api                 = ""  # No Trailing Slash
     gitProvider         = ""
     username            = ""
