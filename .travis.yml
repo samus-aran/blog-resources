@@ -13,7 +13,7 @@ before_install:
 
 install:
   # - go get github.com/gohugoio/hugo
-  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_0.69.2_Linux-64bit.deb # how can we get to update automatically?
+  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_extended_0.69.2_Linux-64bit.deb # how can we get to update automatically?
   - sudo dpkg -i /tmp/hugo.deb
 
 script:
