@@ -1,7 +1,7 @@
 # For a description of these parameters, please visit the theme wiki.
 # https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
 baseurl                 = "https://samus-aran.github.io"
-DefaultContentLanguage  = ""
+DefaultContentLanguage  = "en"
 title                   = "Welcome to nowhere"
 theme                   = "hugo-future-imperfect-slim-custom"
 paginate                = 5

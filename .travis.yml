@@ -18,7 +18,6 @@ install:
 
 script:
   - hugo --theme=hugo-future-imperfect-slim-custom # This commands builds your website on travis
-  - ./bin/check_spelling.sh
 
 deploy:
   local_dir: public # Default static site output dir for Hugo
