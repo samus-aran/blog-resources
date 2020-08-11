@@ -43,7 +43,7 @@
         {{- end -}}
         {{- $cssSlice = $cssSlice | append (resources.Get "scss/main.scss" | toCSS) -}}
         {{- $css := $cssSlice | resources.Concat "css/bundle.css" | minify | fingerprint -}}
-        <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+        <link rel="stylesheet" href="{{ $css.RelPermalink }}">
         {{- if eq (i18n "letter_direction") "RTL" -}}
           {{- $rtl := resources.Get "css/rtl.css" | minify -}}
           <link rel="stylesheet" href="{{ $rtl.RelPermalink }}">
