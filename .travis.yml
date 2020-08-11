@@ -17,7 +17,7 @@ install:
   - sudo dpkg -i /tmp/hugo.deb
 
 script:
-  - hugo --theme=casper-custom # This commands builds your website on travis
+  - hugo --theme=hugo-future-imperfect-slim-custom # This commands builds your website on travis
   - ./bin/check_spelling.sh
 
 deploy:

@@ -1,33 +1,177 @@
-BaseUrl= "https://samus-aran.github.io"
-LanguageCode= "en-EN"
-Title= "Welcome to nowhere"
-paginate = 5
-Copyright = "All rights reserved - 2018"
-canonifyurls = true
-theme = "casper-custom"
+# For a description of these parameters, please visit the theme wiki.
+# https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
+baseurl                 = "https://samus-aran.github.io"
+DefaultContentLanguage  = ""
+title                   = "Welcome to nowhere"
+theme                   = "hugo-future-imperfect-slim-custom"
+paginate                = 5
+disqusShortname         = ""
+googleAnalytics         = ""
+pluralizeListTitles     = false
+disableLanguages        = []
+
+[markup.goldmark.renderer]
+  unsafe                = true
+
+[outputs]
+  home                  = ["html", "json"]
+
 [params]
-  description = "A place for ramblings, thoughts and gists."
-  cover = "/images/cover-resize.jpg"
-  author = "Samus Aran"
-  authorlocation = "Glasgow, Scotland"
-  githubName = "samus-aran"
-  twitterName = "miniridley"
-  hideHUGOSupport = false
-  hjsStyle = "default"
+  enableCDN             = false
+  cssFiles              = ["default"]
+  jsFiles               = ["default"]
+  highlightjs           = true
+  highlightjsTheme      = ""
+  highlightjsLang       = []
+  viewMorePostsLink     = "/blog/"
+  readingTime           = true
+  imageStretch          = ""
+  removeBlur            = false
+  socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
+  hideEmptyStats        = false
 
-  [params.social]
+  [params.meta]
+    description         = "Personal website of Ashley Nicolson, open source advocate and people herder"
+    author              = "Ashley Nicolson"
+    favicon             = false
+    svg                 = true
+    faviconVersion      = "1"
+    msColor             = "#ffffff"
+    iOSColor            = "#ffffff"
 
- [[menu.main]]
-   name = "My Blog"
-   weight = -120
-   identifier = "blog"
-   url = "/"
+  [params.header]
+    navbarTitle         = "Welcome!"
+    dynamicTitles       = true
+    searchMenu          = true
+    shareMenu           = true
 
- [[menu.main]]
-   name = "About"
-   weight = -110
-   identifier = "about"
-   url = "/about"
+  [params.intro]
+    header                = "Why hello! 👋"
+    paragraph             = "I love open source and the people powering it. Here's my personal ramblings & side quests. ⚔️🛡️🧙"
+    rssIntro              = true
+    socialIntro           = true
+    hideWhenSingleColumn  = false
+    alwaysOnHomepage      = false
 
-   [permalinks]
-   post = "/:slug/"
+    [params.intro.pic]
+      src                 = "img/main/profile.jpg"
+      shape               = "circle"
+      width               = ""
+      alt                 = "Sexy picture of myself - Ashley Nicolson"
+
+  [params.sidebar]
+    about               = "I'm an open source community manager who loves to travel and play a ridiculous amount of video games"
+    postAmount          = 5
+    categories          = true
+    categoriesByCount   = true
+
+  [params.footer]
+    rssFooter           = true
+    socialFooter        = true
+
+  [params.staticman]
+    enabled             = true
+    api                 = ""  # No Trailing Slash
+    gitProvider         = ""
+    username            = ""
+    repo                = ""
+    branch              = ""
+
+    [params.staticman.recaptcha]
+      siteKey           = ""
+      encryptedKey      = ""
+
+[menu]
+
+  [[menu.main]]
+    name              = "Home"
+    identifier        = "home"
+    url               = "/"
+    pre               = "<i class='fa fa-home'></i>"
+    weight            = 1
+
+  [[menu.main]]
+    name              = "About"
+    identifier        = "about"
+    url               = "/about/"
+    pre               = "<i class='far fa-id-card'></i>"
+    weight            = 2
+
+  [[menu.main]]
+    name              = "Blog"
+    identifier        = "blog"
+    url               = "/blog/"
+    pre               = "<i class='far fa-newspaper'></i>"
+    weight            = 3
+
+  [[menu.main]]
+    name              = "Categories"
+    identifier        = "categories"
+    url               = "/categories/"
+    pre               = "<i class='fas fa-sitemap'></i>"
+    weight            = 5
+
+  [[menu.main]]
+    name              = "Contact"
+    identifier        = "contact"
+    url               = "/contact/"
+    pre               = "<i class='far fa-envelope'></i>"
+    weight            = 6
+
+[Languages]
+
+  [Languages.en]
+    LanguageCode        = "en"
+    LanguageName        = "English"
+    weight              = 1
+
+[social]
+  # Coding Communities
+  github                = "samus-aran"
+  gitlab                = "scot-osum/scot-osum.gitlab.io"
+  # stackoverflow         = "" # User Number
+  # bitbucket             = ""
+  # jsfiddle              = ""
+  # codepen               = ""
+  # Visual Art Communities
+  # deviantart            = ""
+  # flickr                = "example"
+  # behance               = ""
+  # dribbble              = ""
+  # Publishing Communities
+  # wordpress             = ""
+  # medium                = ""
+  # Professional/Business Oriented Communities
+  linkedin              = "ashley-nicolson-6b1b8829/"
+  linkedin_company      = "salesagility"
+  # foursquare            = ""
+  # xing                  = ""
+  # slideshare            = ""
+  # Social Networks
+  # facebook              = "example"
+  # googleplus            = ""
+  # reddit                = "example"
+  # quora                 = ""
+  # youtube               = ""
+  # vimeo                 = ""
+  # whatsapp              = "" # WhatsApp Number
+    # WeChat and QQ need testing.
+  #  wechat              = ""
+  #  qq                  = "" # User ID Number
+  # instagram             = "example"
+  # tumblr                = ""
+  twitter               = "MiniRidley"
+  # strava                = ""
+  skype                 = "miss-samus-aran"
+  # snapchat              = ""
+  # pinterest             = "example"
+  # telegram              = "example"
+  # vine                  = ""
+  # googlescholar         = ""
+  # orcid                 = ""
+  # researchgate          = "example"
+  # keybase               = "example"
+  mastodon              = "fosstodon.org/@samusaran"
+  # Email
+  email                 = "ashley@scotlandopensource.com"
+
