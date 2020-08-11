@@ -1,0 +1,82 @@
+# Format
+[date_format]
+  other = "January 2, 2006"
+
+# Sidebar
+[recent_posts]
+  other = "Recent Posts"
+[see_more]
+  other = "See More"
+[learn_more]
+  other = "Learn More"
+[attribution]
+  other = "Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='{{ .Site.Hugo.Version }}' target='_blank' rel='noopener'>Hugo</a>"
+
+# Sections
+[about]
+  other = "About"
+[contact]
+  other = "Contact"
+[contact_replies]
+  one = "Replies typically within 1 hour."
+  other = "Replies typically within {{ .Count }} hours."
+[blog]
+  other = "Blog"
+[categories]
+  one = "Category"
+  other = "Categories"
+[tags]
+  one = "Tag"
+  other = "Tags"
+[next_page]
+  other = "Next Page"
+[previous_page]
+  other = "Previous Page"
+
+# Post
+[reading_time]
+  other = "{{ .Count }}-Minute Read"
+[read_more]
+  other = "Read More"
+[share_post]
+  other = "Share This Post"
+[check_out]
+  other = "Check out this post by"
+[say_something]
+  other = "Say Something"
+[comments]
+  other = "Comments"
+[nothing_yet]
+  other = "Nothing yet."
+[reply]
+  other = "Reply"
+[error_msg]
+  other = "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
+[success_msg]
+  other = "Thanks for your comment! It will be shown on the site once it has been approved."
+
+# Form
+[form_name]
+  other = "Your Name"
+[form_email]
+  other = "Your Email"
+[form_website]
+  other = "Your Website"
+[form_subject]
+  other = "Your Subject"
+[form_body]
+  other = "Your Message"
+[reset]
+  other = "Reset"
+[submitted]
+  other = "Submitted"
+[submit]
+  other = "Submit"
+
+# 404
+[404_pagenotfound]
+  other = "Page Not Found"
+[404_sorry]
+  other = "Sorry, but the page you were trying to view does not exist."
+[404_back]
+  other = "Go Back"

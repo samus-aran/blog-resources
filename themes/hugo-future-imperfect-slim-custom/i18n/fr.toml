@@ -1,0 +1,83 @@
+# Format
+[date_format]
+  other = "02-01-2006"
+
+# Sidebar
+[recent_posts]
+  other = "Posts Récents"
+[see_more]
+  other = "Voir Plus"
+[learn_more]
+  other = "Apprendre Encore Plus"
+[attribution]
+  other = "Thème : <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>Un <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>portage de HTML5 UP</a> | Propulsé par <a href='https://gohugo.io/' title='{{ .Site.Hugo.Version }}' target='_blank' rel='noopener'>Hugo</a>"
+
+# Sections
+[about]
+  other = "A Propos"
+[contact]
+  other = "Contact"
+[contact_replies]
+  one = "Réponse généralement en 1 heure."
+  other = "Réponse généralement en {{ .Count }} heures."
+[blog]
+  other = "Blog"
+[categories]
+  one = "Catégorie"
+  other = "Catégories"
+[tags]
+  one = "Étiquette"
+  other = "Étiquettes"
+[next_page]
+  other = "Page Suivante"
+[previous_page]
+  other = "Page Précédente"
+
+# Post
+[reading_time]
+  one = "Lecture d'une Minute"
+  other = "Lecture de {{ .Count }} Minutes"
+[read_more]
+  other = "Lire La Suite"
+[share_post]
+  other = "Partager Ce Post"
+[check_out]
+  other = "Découvrez ce post par"
+[say_something]
+  other = "Dire Quelques Choses"
+[comments]
+  other = "Commentaires"
+[nothing_yet]
+  other = "Rien pour le moment."
+[reply]
+  other = "Répondre"
+[error_msg]
+  other = "Désolé, une erreur s'est produite. Veuillez remplir tous les champs obligatoires et réessayer."
+[success_msg]
+  other = "Merci de votre commentaire, il s'affichera sur le site une fois approuvé."
+
+# Form
+[form_name]
+  other = "Votre Nom"
+[form_email]
+  other = "Votre Adresse Mail"
+[form_website]
+  other = "Votre Site Web"
+[form_subject]
+  other = "Votre Sujet"
+[form_body]
+  other = "Votre Message"
+[reset]
+  other = "Effacer"
+[submitted]
+  other = "Envoyé"
+[submit]
+  other = "Envoyer"
+
+# 404
+[404_pagenotfound]
+  other = "Page Non Trouvée"
+[404_sorry]
+  other = "Désolé, la page que vous cherchez n'existe pas."
+[404_back]
+  other = "Retourner"

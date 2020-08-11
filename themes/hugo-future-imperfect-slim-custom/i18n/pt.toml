@@ -1,0 +1,83 @@
+# Format
+[date_format]
+  other = "2 de January, 2006"
+
+# Sidebar
+[recent_posts]
+  other = "Posts Recentes"
+[see_more]
+  other = "Veja Mais"
+[learn_more]
+  other = "Saber Mais"
+[attribution]
+  other = "Tema: <a href='https://themes.gohugo.io/hugo-future-imperfect-slim/' target='_blank' rel='noopener'>Hugo Future Imperfect</a><br>Adaptado de <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP</a> | Disponibilizado pelo <a href='https://gohugo.io/' title='{{ .Site.Hugo.Version }}' target='_blank' rel='noopener'>Hugo</a>"
+
+# Sections
+[about]
+  other = "Sobre"
+[contact]
+  other = "Contato"
+[contact_replies]
+  one = "Resposta tipicamente em 1 hora."
+  other = "Resposta tipicamente em {{ .Count }} horas."
+[blog]
+  other = "Blog"
+[categories]
+  one = "Categoria"
+  other = "Categorias"
+[tags]
+  one = "Tag"
+  other = "Tags"
+[next_page]
+  other = "Próxima Página"
+[previous_page]
+  other = "Página Anterior"
+
+# Post
+[reading_time]
+  one = "1 Minuto De Leitura"
+  other = "{{ .Count }} Minutos De Leitura"
+[read_more]
+  other = "Leia Mais"
+[share_post]
+  other = "Compartilhe Este Post"
+[check_out]
+  other = "Confira esta postagem por"
+[say_something]
+  other = "Diga Algo"
+[comments]
+  other = "Comentários"
+[nothing_yet]
+  other = "Nada Ainda."
+[reply]
+  other = "Responder"
+[error_msg]
+  other = "Desculpe, ocorreu um erro no envio. Por favor verifique se todos os campos obrigatórios foram preenchidos e tente novamente."
+[success_msg]
+  other = "Obrigado pelo seu comentário! Ele aparecerá no site assim que for aprovado."
+
+# Form
+[form_name]
+  other = "Seu nome"
+[form_email]
+  other = "Seu email"
+[form_website]
+  other = "Seu site"
+[form_subject]
+  other = "Seu Assunto"
+[form_body]
+  other = "Sua mensagem"
+[reset]
+  other = "Reiniciar"
+[submitted]
+  other = "Enviado"
+[submit]
+  other = "Enviar"
+
+# 404
+[404_pagenotfound]
+  other = "Página Não Encontrada"
+[404_sorry]
+  other = "Desculpe, mas a página que você está procurando não existe."
+[404_back]
+  other = "Voltar"
